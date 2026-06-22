@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal - Home</title>
+    <style>
+        /* Base Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1e293b;
+            padding: 15px 5%;
+            color: white;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover {
+            color: #38bdf8;
+        }
+
+        /* Hero / Search Section */
+        .hero {
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+            color: #cbd5e1;
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .search-container input {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .search-container button {
+            padding: 12px 25px;
+            background-color: #38bdf8;
+            color: #0f172a;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .search-container button:hover {
+            background-color: #0ea5e9;
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            border-left: 5px solid #38bdf8;
+            padding-left: 10px;
+        }
+
+        /* Job Listings Grid */
+        .job-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        /* Job Card Style */
+        .job-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+        }
+
+        .job-title {
+            font-size: 20px;
+            color: #1e293b;
+            margin-bottom: 5px;
+        }
+
+        .company-name {
+            color: #64748b;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .job-details {
+            font-size: 14px;
+            color: #475569;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .job-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            color: #94a3b8;
+        }
+
+        .apply-btn {
+            background-color: #1e293b;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .apply-btn:hover {
+            background-color: #38bdf8;
+            color: #1e293b;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1e293b;
+            color: #94a3b8;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar Section -->
+    <nav class="navbar">
+        <div class="logo">JobHub</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Browse Jobs</a>
+            <a href="#">Post a Job</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero / Main Search Banner Section -->
+    <header class="hero">
+        <h1>Find Your Dream Job Today</h1>
+        <p>Connecting top talent with the world's best companies.</p>
+        <div class="search-container">
+            <input type="text" placeholder="Job title, keywords, or company...">
+            <button type="button">Search</button>
+        </div>
+    </header>
+
+    <!-- Latest Jobs Content Section -->
+    <main class="container">
+        <h2 class="section-title">Latest Job Openings</h2>
+
+        <div class="job-grid">
+
+            <!-- Job Card 1 -->
+            <div class="job-card">
+                <h3 class="job-title">Frontend Developer</h3>
+                <div class="company-name">Tech Solutions Inc.</div>
+                <p class="job-details">We are looking for a skilled Frontend Developer proficient in HTML, CSS, and JavaScript to join our growing team.</p>
+                <div class="job-meta">
+                    <span>📍 New York, NY</span>
+                    <a href="#" class="apply-btn">Apply Now</a>
+                </div>
+            </div>
+
+            <!-- Job Card 2 -->
+            <div class="job-card">
+                <h3 class="job-title">Data Analyst</h3>
+                <div class="company-name">Finance Corp</div>
+                <p class="job-details">Seeking a Data Analyst to clean, analyze, and visualize complex datasets. Strong SQL and Excel skills required.</p>
+                <div class="job-meta">
+                    <span>📍 Remote</span>
+                    <a href="#" class="apply-btn">Apply Now</a>
+                </div>
+            </div>
+
+            <!-- Job Card 3 -->
+            <div class="job-card">
+                <h3 class="job-title">UX/UI Designer</h3>
+                <div class="company-name">Creative Studio</div>
+                <p class="job-details">Join our design agency to build beautiful user interfaces. Experience with Figma and prototyping tools is essential.</p>
+                <div class="job-meta">
+                    <span>📍 London, UK</span>
+                    <a href="#" class="apply-btn">Apply Now</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 JobHub Portal Project. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
